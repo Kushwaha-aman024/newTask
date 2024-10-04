@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './NewProduct.css'; // Import custom CSS
 
-const AddProductForm = () =>{
+const AddProductForm = () => {
   const [discountCount, setDiscountCount] = useState(3);
   const [discounts, setDiscounts] = useState(Array(discountCount).fill({ name: '', value: '' }));
 
