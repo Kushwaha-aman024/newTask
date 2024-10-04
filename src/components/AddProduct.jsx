@@ -72,7 +72,7 @@ const AddProductForm = () => {
       </div>
 
       {discounts.map((discount, index) => (
-        <div key={index} className="discount-row">
+        <div key={index} className="discount-row flex gap-5">
           <div className="form-group">
             <label className="form-label">Discount Name</label>
             <input
