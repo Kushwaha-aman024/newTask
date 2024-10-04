@@ -1,0 +1,78 @@
+.new-product-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading {
+    font-size: 24px;
+    font-weight: 600;
+    color: #02050e; /* Tailwind blue-600 */
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #374151; /* Gray 700 */
+  }
+  
+  .input-group input,
+  .input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db; /* Gray 300 */
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .discount-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .discount-input {
+    flex: 1;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .add-button {
+    background-color: #3b82f6; /* Blue 600 */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-button:hover {
+    background-color: #2563eb; /* Blue 700 */
+  }
+  
+  .discard-button {
+    background-color: #e5e7eb; /* Gray 300 */
+    color: #374151; /* Gray 700 */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .discard-button:hover {
+    background-color: #d1d5db; /* Gray 400 */
+  }
