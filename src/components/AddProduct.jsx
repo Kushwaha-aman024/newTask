@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './NewProduct.css'; // Import custom CSS
 
 const AddProductForm = () => {
-  const [discountCount, setDiscountCount] = useState(3);
+  const [discountCount, setDiscountCount] = useState(0);
   const [discounts, setDiscounts] = useState(Array(discountCount).fill({ name: '', value: '' }));
 
   // Handle change in number of discounts
