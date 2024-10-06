@@ -1,6 +1,16 @@
 import React from "react";
-import AddProduct from "./components/AddProduct"; // Adjust the path based on where AddProduct is located
+import AddProduct from "./components/AddProduct";
+import SmallPopup from "./components/SmallPopup"; //Adjust the path based on where AddProduct is located
+const App = () => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
 
+  const handleOpenPopup = () => {
+    setIsPopupOpen(true);
+  };
+
+  const handleClosePopup = () => {
+    setIsPopupOpen(false);
+  };
 function App() {
   return (
     <div className="min-h-screen bg-gradient-to-r from-blue-50 to-indigo-100 flex items-center justify-center">
@@ -11,8 +21,16 @@ function App() {
         {/* AddProduct Component */}
         <AddProduct />
       </div>
+           <button className="open-popup-button" onClick={handleOpenPopup}>
+        Open Popup
+      </button>
+
+      <SmallPopup isOpen={isPopupOpen} onClose={handleClosePopup} title="Small Popup">
+        <p>This is a simple popup content.</p>
+      </SmallPopup>
     </div>
   );
 }
+};
 
 export default App;
