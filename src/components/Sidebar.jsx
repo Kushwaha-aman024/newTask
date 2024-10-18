@@ -23,7 +23,7 @@ const Sidebar = () => {
         <div className="flex items-center justify-start h-16 bg-gray-900 px-4">
         
           <img
-            src="/path/to/your/logo.png" 
+            src="/components/logo.png" 
             alt="Logo"
             className="w-12 h-12 object-contain mr-2"
           />
